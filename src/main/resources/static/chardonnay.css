@@ -3,10 +3,11 @@
 }
 
 .jh-jumbo{
-	background-image: url("/vineyard.png");
+	background-image: url("/img/vineyard.png");
 	max-width: 100%;
 	height: auto;
 	color: #f5f5f0;
+	margin-bottom: 100px;
 }
 
 .jh-ptext{
@@ -25,4 +26,8 @@
   	margin: 25px;
   	margin-left: 34%;
   	margin-top: 60px;
+}
+
+html, body {
+	background-image: url("https://lousbarandgrill.com/wp-content/uploads/2018/06/Lous-wood.jpeg");
 }
