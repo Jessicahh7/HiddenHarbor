@@ -7,6 +7,7 @@ footer span.title{
 	font-size: 120%;
 	font-weight: 700;
 	text-align: center;
+	font-family: 'Playfair Display SC', serif;
 }
 
 .bottom-footer{ 
@@ -15,4 +16,7 @@ footer span.title{
     background-color: hsl(0, 30%, 85%);
   	color: hsl(0, 100%, 25%);
 	font-weight: 700;
+}
+Body{
+	font-family: 'Cardo', serif;
 }
