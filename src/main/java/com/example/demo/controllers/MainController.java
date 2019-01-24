@@ -18,4 +18,28 @@ public class MainController {
 		return mv;
 	}
 
+	
+	@GetMapping("/red-wine")
+	public ModelAndView redWineMethod() {
+		ModelAndView mv = new ModelAndView("redWine");
+		return mv;
+	}
+	
+	@GetMapping("/white-wine")
+	public ModelAndView whiteWineMethod() {
+		ModelAndView mv = new ModelAndView("whiteWine");
+		return mv;
+	}
+	
+	@GetMapping("/chardonnay")
+	public ModelAndView chardonnayMethod() {
+		ModelAndView mv = new ModelAndView("chardonnay");
+		return mv;
+	}
+	
+	@GetMapping("/pinot-noir")
+	public ModelAndView pinotNoirMethod() {
+		ModelAndView mv = new ModelAndView("pinot-noir");
+		return mv;
+	}
 }
