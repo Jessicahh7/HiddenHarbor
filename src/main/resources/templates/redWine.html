@@ -1,62 +1,76 @@
 <!DOCTYPE html>
-<html>
 
-<head>
-	<meta charset="UTF-8">
-	<title>Hidden Harbor Wine</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="index.css" type="text/css">
-</head>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>Red Wine is all but divine</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<link rel="stylesheet" href="redWine.css" type="text/css">
+	</head>
+	<body>
+	<div class="jh-container">
+	
+		<div class="jumbotron jumbotron-fluid jh-jumbo">
+  			<div class="container">
+    			<h1 class="display-3 jh-htext">Red Wine</h1>
+    			<p class="jh-ptext">“In victory, you deserve Champagne. In defeat you need it.”
+― Napoleon Bonaparte</p>
+ 			</div>
+		</div>
 
-<body>
-<div class="jh-container">
-      <table class="jh-table">
-         <tr>
-            <td colspan = "2">
-               <nav class="navbar sticky-top navbar-dark jh-navbar">
-					<a class="navbar-brand"><img class="jh-navlogo" src="wine.png" alt="Wine Logo">
-					</a>
-				</nav>
-            </td>
-         </tr>
-      </table>
-      
-      <div class="card" style="width: 18rem;">
-  			<img class="card-img-top" src="..." alt="Card image cap">
-  		<div class="card-body">
-    		<h5 class="card-title">Card title</h5>
-    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    		<a href="#" class="btn btn-primary">Go somewhere</a>
-  		</div>
-	 </div>
-	 <div class="card" style="width: 18rem;">
-  			<img class="card-img-top" src="..." alt="Card image cap">
-  		<div class="card-body">
-    		<h5 class="card-title">Card title</h5>
-    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    		<a href="#" class="btn btn-primary">Go somewhere</a>
-  		</div>
-	 </div>
-	<div class="card" style="width: 18rem;">
-  			<img class="card-img-top" src="..." alt="Card image cap">
-  		<div class="card-body">
-    		<h5 class="card-title">Card title</h5>
-    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    		<a href="#" class="btn btn-primary">Go somewhere</a>
-  		</div>
+		<div class="card-columns">
+			<div class="card">
+		    <img class="card-img-top" src="/img/MeierSweetRedWine.jpg" alt="MeirSweetRedwine">
+			    <div class="card-body">
+			      <h5 class="card-title">Meier's Sweet Red Wine</h5>
+			      <p class="card-text">This is a semi-sweet wine made from the Concord grape. Enjoy the fresh fruit and slight effervescence. Although an excellent wine with most foods, this wine is also perfect to sip while relaxing after any meal. Serve chilled.</p>
+		  		</div>
+		  	</div>
+		  	 <div class="card">
+			    <img class="card-img-top" src="/img/RadiusCabernet.png" alt="Radius Cabernet">
+			    <div class="card-body">
+			      <h5 class="card-title">Radius Cabernet</h5>
+			      <p class="card-text">This delicious Cabernet greets you with aromas of red jammy fruits and black cherry. Hints of toasty oak lead to a delightful finish. A true crowd-pleaser, this is great for entertaining and pairs well with hors d'oeuvres</p>
+			    </div>
+		  	</div>
+		  	<div class="card">
+			    <img class="card-img-top" src="/img/MascotaVineyardsUnanime.png" alt="Mascota Vineyards Unanime">
+			    <div class="card-body">
+			      <h5 class="card-title">Mascota Vineyards Unanime</h5>
+			      <p class="card-text">A blend of cabernet sauvignon, cabernet franc and malbec, this delivers beautiful fruit with berry and lemon rind character and hints of toasted oak. Lovely flavorful finish. Delicious.</p>
+			    </div>
+		  	</div>
+		</div>
+		
+		<div class="card-columns">
+			<div class="card">
+		    <img class="card-img-top" src="/img/warm-n-cozy-mulled-wine.jpg" alt="Warm-N-Cozy Mulled Wine">
+			    <div class="card-body">
+			      <h5 class="card-title"> Warm-N-Cozy Mulled Wine</h5>
+			      <p class="card-text">The welcoming scent of cinnamon and spice will make you "warm and cozy" on even the coldest of winter days. To serve, empty contents into pot and warm to your preference. Garnish with cinnamon sticks or a slice of orange.</p>
+			    </div>
+		  	</div>
+		  	<div class="card">
+			    <img class="card-img-top" src="/img/520DrySyrahRedWine.jpg" alt="#520 Dry Syrah Red Wine">
+			    <div class="card-body">
+			      <h5 class="card-title">#520 Dry Syrah Red Wine</h5>
+			      <p class="card-text">This dry Syrah is a medium to full-bodied red wine with medium-plus to high levels of tannins and flavors of blackberry, mint and black pepper notes.</p>
+			    </div>
+		  	</div>
+		  	<div class="card">
+			    <img class="card-img-top" src="/img/4PinotNoirSpätburgunderClassic.jpg" alt="#4 Pinot Noir Spätburgunder Classic.jpg">
+			    <div class="card-body">
+			      <h5 class="card-title">#4 Pinot Noir Spätburgunder Classic, Dry</h5>
+			      <p class="card-text">A wine with buttery characteristics has been aged in oak and generally is rich and flat (less Acidity). A buttery wine often has a cream-like texture that hits the middle of your tongue almost like oil (or butter) and has a smooth finish.</p>
+			    </div>
+		  	</div>
+		</div>
+		
+ 
+	
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 	</div>
-	 <div class="card" style="width: 18rem;">
-  			<img class="card-img-top" src="..." alt="Card image cap">
-  		<div class="card-body">
-    		<h5 class="card-title">Card title</h5>
-    		<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    		<a href="#" class="btn btn-primary">Go somewhere</a>
-  		</div>
-	</div>
-</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-</body>
-
-
+	</body>
 </html>
