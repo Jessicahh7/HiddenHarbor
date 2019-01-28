@@ -39,7 +39,7 @@ public class MainController {
 	
 	@GetMapping("/pinot-noir")
 	public ModelAndView pinotNoirMethod() {
-		ModelAndView mv = new ModelAndView("pinot-noir");
+		ModelAndView mv = new ModelAndView("pinotNoir");
 		return mv;
 	}
 }
