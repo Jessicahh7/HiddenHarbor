@@ -1,19 +1,24 @@
 pipeline {
     agent any
+
     stages {
-        stage("build") {
+        stage('Build') {
             steps {
-                sh "./mvnw clean install -DskipTests"
+                sh 'make' 
+                archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true 
+            }
+          stage('Test') {
+            steps {
+                /* `make check` returns non-zero on test failures,
+                * using `true` to allow the Pipeline to continue nonetheless
+                */
+                sh 'make check || true' 
+                junit '**/target/*.xml' 
             }
         }
-        stage("test") {
+        stage('Deploy') {
             steps {
-                sh "./mvnw test"
-            }
-        }
-        stage("deploy") {
-            steps {
-                sh "./mvnw clean heroku:deploy"
+                echo 'Deploying....'
             }
         }
     }
