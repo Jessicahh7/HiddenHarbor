@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aop-reference-model/>
+<aop-reference-model>
+<aop-project name="Lab3"/>
+<aop-project name="LettersToSanta-master"/>
+<aop-project name="java-spring-blog"/>
+<aop-project name="LettersToSanta"/>
+<aop-project name="com.techtalentsouth.Week3Assessment"/>
+<aop-project name="SubscriberList"/>
+<aop-project name="h2Explore"/>
+<aop-project name="MyAwesomeProject"/>
+<aop-project name="week1Assessment"/>
+</aop-reference-model>
